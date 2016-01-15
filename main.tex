@@ -1,0 +1,823 @@
+\documentclass[11pt,twoside=false,open=any]{scrbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{skript2016}
+
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{nicefrac}
+
+
+\begin{document}
+\title{Skript zur Elektrostatik 1}
+
+\author{Matthias Heimberg}
+\publishers{Gymnasium Oberaargau}
+\date{Sekunda, 2016}
+
+\begingroup
+ \makeatletter
+ \@titlepagetrue
+ \maketitle
+\endgroup
+\newpage
+
+\newcounter{aufgaben}
+\tableofcontents
+\newpage
+\chapter{Statische Elektrizität und Ladung} 
+Wir wissen heute, dass sämtliche Objekte um uns aus Atomen bestehen. Diese Atome bestehen ihrerseits aus einem Kern und der ihn umgebenden Elektronenwolke. Im Kern finden wir elektrisch geladenen Protonen und elektrisch neutrale Neutronen. Die Elektronenwolke besteht aus elektrisch geladenen Elektronen. Wir bezeichnen die Ladung der Protonen als die \textbf{positive Ladung} und die der Elektronen als die \textbf{negative Ladung}. 
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+
+Ladung ist eine physikalische Eigenschaft von Objekten, die dazu führt, dass diese von anderen geladenen Objekten angezogen oder abgestossen werden. Jedes geladene Objekt erzeugt und wird beeinflusst von einer Kraft die wir die elektromagnetische Kraft nennen.
+
+\end{minipage}
+}
+\end{center}
+
+\section{Proton und Elektron}
+Nahezu jede Ladung in der Natur besteht aus Elektronen und/oder Protonen (es existieren noch andere Teilchen, die Ladung tragen, diese sind aber selten und sind nicht lange stabil).
+
+Die Ladungen von Elektron und Proton sind gleich im Betrag, aber mit entgegengesetztem Vorzeichen. Alle Ladungen in der Natur sind \textbf{ganzzahlige Vielfache} dieser elementaren Ladungen. Wir bezeichnen diese \textbf{Elementarladung mit:}
+
+\[ | q_{e} | = \SI{1.60E-19}{\coulomb} \]
+
+Das Symbol $q$ oder $Q$ wird üblicherweise für die Grösse der Ladung verwendet.
+Elektronen scheinen keine innere Struktur zu besitzen, wir nehmen heute an, dass sie punktförmig sind. Im Gegensatz dazu lassen Streuexperimente an Protonen darauf schliessen, dass diese in ihrem Innern aus punktförmigen Teilchen aufgebaut sind; diese Sub-Teilchen, Quarks genannt, wurden noch nie direkt beobachtet. Man nimmt heute an, dass die Quarks Ladungen von entweder $-\frac{1}{3}$ oder $\frac{2}{3}$ tragen (gemessen in Elementarladungen). Die Quarks bilden vermutlich die ultimative Substruktur der Materie, d.h. sie sind ihrerseits elementar (ohne innere Struktur). Für ein Proton gilt also:
+\[ q_{Proton} = \frac{2}{3}q_{e} + \frac{2}{3}q_{e} -\frac{1}{3}q_{e} \]
+\section{Die Ladungserhaltung}
+Wenn ein Objekt geladen wird, wird nicht wirklich eine Ladung erzeugt. Die in den Atomen bereits vorhandenen Ladungen werden bei diesem Vorgang voneinander getrennt und herumbewegt. Tatsächlich bleibt die \textbf{Gesamtladung} bei sämtlichen Vorgängen erhalten:
+\begin{center}
+   \setlength{\fboxrule}{3pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+Ladungserhaltung:
+\vspace{2cm}
+
+\end{minipage}
+}
+\end{center}
+
+In etwas exotischeren Beispielen, zum Beispiel in Teilchenbeschleunigern, kann Masse $\Delta m$ aus Energie entstehen (nach $\Delta m = \frac{E}{c^2}$). Es kann vorkommen, dass diese Masse geladen ist, zum Beispiel wenn ein Elektron entsteht. Wenn nun aber ein geladenen Teilchen entsteht, dann muss gleichzeitig ein entgegengesetzt geladenes Teilchen entstehen, damit die Gesamtladung konstant (Null) bleibt. Üblicherweise bilden die beiden Teilchen ein Materie-Antimaterie-Paar. Zum Beispiel würde gleichzeitig mit dem Elektron auch ein Anti-Elektron entstehen. Das Anti-Elektron besitzt eine positive Ladung (es wird Positron genannt), und somit ist die \textbf{Gesamtladung} der erzeugten Masse Null. Zu jedem Teilchen existiert ein Antiteilchen mit der entgegengesetzten Ladung. Wenn Materie und Antimaterie Teilchen zusammengebracht werden, so annihilieren sie sich gegenseitig. Annihilieren bedeutet hier, dass die gesamte Masse der beiden Teilchen in Energie verwandelt wird (auch beschreiben durch $\Delta m = \frac{E}{c^2}$). Da die beiden Teilchen eine entgegengesetzte Ladung besitzen, ist die Gesamtladung vor und nach der Annihilation Null, die Gesamtladung ist auch hier erhalten. 
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\item Die meisten Objekte bestehen aus einer extrem hohen Anzahl von geladenen Teilchen, weshalb beobachten wir dann nicht bei allen Objekten statische Elektrizität?
+\item Weshalb enthalten die meisten Objekte gleich viele negative wie positive Ladungen?
+\item Gewöhnliche statische Elektrizität funktioniert mit Ladungen im Bereich von Nano- bis Mikrocoulomb. Wie viele Elektronen werden benötigt um eine Ladung von $-\SI{2.00}{\nano \coulomb}$ zu erstellen? Wie viele Elektronen müssen entfernt werden um eine Ladung von \SI{0.500}{\micro \coulomb} zu erhalten?
+\item Wenn in einem Tag \SI{1.80E20}{} Elektronen durch einen Taschenrechner bewegt werden, wie viele Coulomb Ladung wurden dann bewegt?
+\item Um ein Auto zu starten, bewegt die Autobatterie \SI{3.75E21}{} Elektronen durch die Zündkerze. Wie viele Coulomb Ladung wurden bewegt?
+\item In einem Blitz wird eine Ladung \SI{40.0}{\coulomb} bewegt. Wie viele Elementarladungen $|q_{e}|$ sind dies?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+
+\chapter{Leiter und Isolatoren}
+
+Einige Substanzen wie zum Beispiel Metalle und Salzwasser erlauben es den Ladungen, sich relativ frei hindurchzubewegen. Einige der Elektronen in Metallen und ähnlichen Leitern sind nicht an individuelle Atome im Material gebunden. Diese \textbf{freien Elektronen} können sich ähnlich durch das Material bewegen, wie Luft durch losen Sand. All diese Substanzen, die freie Elektronen besitzen und in denen sich Ladungen relativ frei bewegen können, nennen wir \textbf{Leiter}. Die sich bewegenden Elektronen werden zwar mit den fixen Atomen und Molekülen des Materials kollidieren und verlieren dabei etwas Energie, aber sie können sich in dem Leiter bewegen. Leiter in denen sich die Ladungen ohne Energieverlust bewegen können, nennen wir Supraleiter.
+Salzwasser und andere ähnliche leitende Materialien enthalten freie Ionen die sich durch das Material bewegen können. Ein Ion ist ein Atom oder Molekül mit einer positiven oder negativen Gesamtladung (Ladungsungleichgewicht). Mit anderen Worten: Die Anzahl der Elektronen stimmt nicht mit der Anzahl der Protonen überein.
+
+
+Durch andere Substanzen wie zum Beispiel Glas oder Keramik können sich keine Ladungen bewegen. Diese Substanzen nennen wir \textbf{Isolatoren} oder Nichtleiter. Elektronen und Ionen in Isolatoren sind in der Struktur des Materials gebunden und können sich nicht einfach so bewegen (ungefähr \SI{10E23}{} mal langsamer als in Leitern). Reines Wasser und trockenes Tafelsalz sind Isolatoren, gelöstes Salz und Salzwasser hingegen sind Leiter. 
+
+\section{Laden eines Objektes durch Kontakt}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{elektroskop1.jpg}
+\caption{(a) Ein positiv geladener Glasstab wird in die Nähe des ungeladenen Elektroskops gebracht. Elektronen des Elektroskopes werden in den oberen Teil gezogen und hinterlassen unten eine positive Ladung. (b) Wenn der Stab das Elektroskpo berührt, werden Elektronen auf den Stab übergehen und verringern somit die Gesamtladung des Glasstabes aber hinterlassen das Elektroskop mit einer positiven Gesamtladung. (c) Die überschüssige Ladungen verteilt sich gleichmässig im Elektroskop}
+\label{fig:elektroskop1}
+\end{figure}
+
+Die Abbildung \ref{fig:elektroskop1} zeigt ein Elektroskop, das durch die Berührung mit einem positiv geladenen Glasstab geladen wird. Da der Glasstab ein Isolator ist, muss er das Elektroskop tatsächlich berühren, um ihm Ladungen zu entziehen oder Ladungen aufzubringen. Da die Elektronenen sich nur im Metall bewegen können, werden die Elektronen im Elektroskop nach oben bewegt. Dort werden einige davon bei der Berührung auf den Glasstab übergehen und hinterlassen damir das Elektroskop mit einer positiven Gesamtladung. \textbf{Elektrostatische Abstossung} führt dazu, dass sich die Nadel im Elektroskop bewegt. 
+
+\section{Laden eines Objektes durch Influenz} %http://cnx.org/contents/Ax2o07Ul@9.4:8vWesjNz@4/Conductors-and-Insulators
+Um ein Objekt elektrisch aufzuladen, benötigt man keine direkte Berührung mit einer Ladung. Die Abbildung \ref{fig:influenz1} zeigt eine Methode durch \textbf{Influenz}. Zwei neutrale Metallkugeln berühren sich, sind aber vom Rest der Welt isoliert. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=4.5cm]{influenz1.jpg}
+\caption{Laden durch Influenz: (a) Zwei ungeladenen Metallkugeln berühren sich, sind aber vom Rest der Welt isoliert. (b) Ein positiv geladener Glasstab wird in die Nähe der linken Kugel gebracht. Die negativen Ladungen in der Kugel werden angezogen} 
+\label{fig:influenz1}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\chapter{Das Coulomb-Gesetz und das elektrische Feld}
+Die Coulombkräfte zwischen elektrischen Ladungen wirken, ohne dass sich die Ladungen be-rühren. Wir nennen dieses Phänomen \textbf{Fernwirkung} von Kräften. Wir haben bereits eine fernwirkende Kraft kennen gelernt: Die Gravitationskraft. Die Gleichung der Gravitationskraft (\ref{FG}) zwischen zwei Massen besitzt den gleichen Aufbau wie die Coulomb-Gleichung (\ref{FC}) für die elektrische Kraft zwischen zwei (punktförmigen) Ladungen:
+
+    \begin{equation}
+	\label{FG}
+		F_{G} = G \cdot \frac{m_{1} \cdot m_{2}}{r^{2}};
+	\end{equation}
+ 
+	\begin{equation}
+	\label{FC}
+		F_{C} = k \cdot \frac{Q_{1} \cdot Q_{2}}{r^{2}} 
+	\end{equation}
+
+Die beiden Kräfte zeigen ein fast identisches Verhalten, unterschiedlich ist ihre Stärke und die Tatsache, dass die Gravitationskraft eine ausschliesslich \textcolor{black}{anziehende} Kraft ist. Für keine der beiden Kräfte ist ein Medium notwendig, das heisst, wir können diese auch nachweisen, wenn zwischen den Körpern ein Vakuum herrscht. 
+
+Bisher haben wir diese Kraftwirkungen mittels der sogenannten \textbf{Fernwirkungstheorie} beschrieben: Betrachten wir dazu ein einfaches Beispiel aus dem Physikunterricht (siehe Abbildung \ref{Bsp1}): Eine positiv aufgeladene Kugel hängt an einem Isolierfaden.
+Bringt man in ihre Nähe die ungeladene Haube des Bandgenerators, so wird die Kugel zunächst geringfügig von der neutralen Haube angezogen. Lädt man nun die Haube des Bandgenerators positiv auf, so wird die Kugel nach rechts bewegt, da sich gleichnamig geladene Körper abstossen. Als Ursache für die Auslenkung der Kugel wird die in einer gewissen Entfernung  angeordnete positiv geladene Haube des Bandgenerators angesehen. 
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\draw[ball color=white, shading=ball] (0,0) node{$+$ $+$ $+$} circle (1.5cm) node[below=1cm] {Bandgenerator};
+\draw (4.5,0) -- (3.5,6);
+\draw[dashed] (3.5,6) -- (3.5,0);
+\draw[ball color=white, shading=ball] (4.5,0) node {$+$} circle (5mm);
+\draw[->,draw=red,thick] (4.5,0) -- node[below,style=red] {$\vec{F}_{C}$} (6.5,0);
+\end{tikzpicture}
+\caption{Eine positiv geladene Kugel wird von der gleichnamig geladenen Haube des Bandgenerators abgestossen}
+\label{Bsp1}
+\end{center}
+\end{figure}
+
+\section{Das elektrische Feld (Nahwirkungstheorie)}
+In der Physik benützen wir den Begriff \textbf{``Feld''} um diese Kraftwirkungen ohne Fernwirkung zu beschreiben. Der amerikanische Physiker Richard Feynman\footnote{11. Mai 1918 - 15. Februar 1988, Nobelpreis im Jahr 1965} beschreibt das physikalische Feld mit den folgenden Worten:
+	\begin{quote}
+\textit{Ein wirkliches Feld ist eine mathematische Funktion, die wir verwenden, um die Vorstellung der Fernwirkung zu vermeiden. Ein wirkliches Feld ist dann ein System von Zahlen, die wir so festlegen, dass das, was an einem Punkt geschieht, nur von den Zahlen an diesem Punkt abhängt. Wir brauchen nichts darüber zu wissen, was anderswo vor sich geht.\footnote{Richard Feynman: Vorlesungen über Physik, Band II, Kap. 15-4}}
+	\end{quote}
+Im 19. Jahrhundert führten die Physiker (insbesondere Michael Faraday\footnote{Michael Faraday (22. September 1791 - 25. August 1867) war ein englischer  Physiker  und Chemiker.}) diese neue Deutungsmöglichkeit für die Auslenkung der geladenen Kugel ein: Die Ursache für die Auslenkung der Kugel ist ein \textbf{elektrisches Feld}, das am Ort der Kugel herrscht (Nahwirkungstheorie). Das elektrische Feld wird bei unserem Experiment durch die geladene Haube des Bandgenerators erzeugt. Die Deutung der Kraftwirkung auf einen geladenen Körper durch das Vorhandensein eines elektrischen Feldes am Ort des Körpers ist sehr viel leistungsfähiger als die Fernwirkungstheorie. Dabei ist nicht so sehr im Vordergrund, wie die Kraftübertragung genau funktioniert\footnote{die Quantenmechanik beschreibt heute die Kraftübertragung mit sogenannten virtuellen Photonen}, sondern nur wie die Kräfte wirken. Wir fassen zusammen:
+
+\begin{itemize}
+	\item Wenn in einem Raum elektrische Kraftwirkungen auftreten, so herrscht in diesem Raum ein elektrisches Feld
+	\item Ein elektrisches Feld wird durch elektrische Ladungen erzeugt. Es ist Mittler für elektrische Kräfte.
+\end{itemize}
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\item Betrachten Sie nochmals die Abbildung \ref{Bsp1} und lesen Sie den dazugehörenden Text durch. Weshalb wird die positiv geladene Kugel vom Bandgenerator angezogen, wenn dieser keine Ladung trägt?
+\item Beschreiben Sie den Unterschied zwischen der ``Fernwirkungstheorie'' und der ``Nahwirkungstheorie'' von Faraday an einem Beispiel.
+\item Wie äussert sich der Unterschied der Stärke von $F_{C}$ und $F_{G}$ in ihren Gleichungen (Gleichung \ref{FG} und \ref{FC} aus Seite \pageref{FC})?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Feldlinien beim elektrischen Feld}
+Das elektrische Feld weist eine Struktur auf, die stark von der Anordnung und der Form der geladenen Körper abhängt. Diese Struktur wird durch \textbf{Feldlinien} veranschaulicht. 
+
+\subsubsection{Ein Experiment mit Probeladungen (z.B. Wattebausch)}
+\begin{itemize}
+	\item Probeladungen im elektrischen Feld bewegen sich längs bestimmter Linien, den Feldlinien.
+	\item Die Richtung der Feldlinien gibt die Richtung der Kraft auf eine positive Probeladung an.
+	\item  Beim statischen elektrischen Feld beginnen die Feldlinien bei der positiven Ladung und enden bei der negativen Ladung.
+	\item  Die Struktur der Feldlinienbilder hängt stark von der Form und der Aufladungen der geladenen Körper ab.
+\end{itemize}
+
+\subsubsection{Ein Experiment mit polarisierbaren Nichtleitern}
+Kleine Nichtleiter wie Grieskörner oder Kunststofffasern werden im elektrischen Feld polarisiert und die entstehenden Dipole\footnote{Ein Dipol besteht aus zwei räumlich getrennten Polen mit unterschiedlichem Vorzeichen ($+$,$-$).} richten sich dann (wenn die Reibung gering ist) längs der elektrischen Feldlinien aus. Auf diese Weise gelangt man auf sehr einfache und schnelle Art zu den Feldlinienbildern.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!10}{gray!10}{
+\begin{minipage}[t][6cm]{\textwidth}
+\paragraph{Versuch}
+Skizzieren Sie die beobachteten Feldlinienbilder:
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Darstellungsmöglichkeiten}
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+\draw[ball color=white, shading=ball] (0,0) node {$+Q$} circle (5mm);
+\foreach \i in {0,...,11}{
+\draw[->,>=latex,,thick,rotate=30*\i] (0.8,0) -- (2,0);
+}
+\end{tikzpicture}
+\caption{Das elektrische Feld einer positiven Ladung $Q$.}
+\label{Efeld +Q}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+\draw[ball color=white, shading=ball] (0,0) node {$-Q$} circle (5mm);
+\foreach \i in {0,...,11}{
+\draw[<-,>=latex,,thick,rotate=30*\i] (0.8,0) -- (2,0);
+}
+\end{tikzpicture}
+\caption{Das elektrische Feld einer negativen Ladung $-Q$.}
+\label{Efeld -Q}
+\end{center}
+\end{figure}
+
+Das elektrische Feld kann graphisch durch die Angabe von Vektorpfeilen an verschiedenen Punkten veranschaulicht werden. Die Länge eines Vektorpfeiles ist gleich dem Betrag dieses Vektors, sie gibt uns also die Feldstärke an diesem Punkt an. Je länger der Vektor, desto stärker das Feld.
+\subsubsection{Eigenschaften von Feldlinien}
+
+\begin{itemize}
+\item Kraftvektoren (Feldstärkevektoren) sind Tangenten  an die Feldlinien
+\item Feldlinien treten immer senkrecht auf die Oberfläche des geladenen Körpers aus oder ein.
+\item  von $+$ nach $-$: Die Richtung der Feldlinien in einem Punkt entspricht der Richtung der elektrischen Feldstärke, d.h. der Kraftwirkung auf eine positive Ladung in diesem Punkt. Feldlinien gehen von positiven Ladungen aus und laufen auf negative Ladungen zu (oder enden im Unendlichen). Die Richtungsdefinition ist willkürlich.
+\item Keine Überschneidung: Linien können sich nicht kreuzen, denn in jedem Raumpunkt gibt es nur einen Kraftvektor (nur eine Tangente)
+\item Es gibt unendlich viele Feldlinien. Zeichnen kann man aber nur eine begrenzte Anzahl und so wählt man eine zur Grösse der Ladung proportionale Anzahl der Feldlinien. Je dichter die Feldlinien, desto stärker ist dort die Kraftwirkung.
+\item Es gibt in der Elektrostatik keine in sich geschlossenen Feldlinien\footnote{dies würde dem Energiesatz widersprechen: Eine Probeladung würde bei Umläufen in Kraftrichtung längs einer geschlossenen Feldlinie Energie gleichsam aus dem Nichts gewinnen}
+\item Um eine einzelne Punktladung herum sind die Feldlinien kugelsymmetrisch verteilt.
+\item In grosser Entfernung wirkt ein System von Ladungen wie eine einzige Punktladung, deren Ladung der Gesamtladung des Systems entspricht\footnote{ein elektrisches Feld einer komplizierten Anordnung von Ladungen wird also jeweils aus grossem Abstand betrachtet sehr einfach aussehen!}.
+\end{itemize}
+
+\section{Die elektrische Feldstärke}
+Die Stärke eines elektrischen Feldes an einem bestimmten Punkt im Raum definiert man über die Kraftwirkung auf eine Probeladung\footnote{positive, kleine Ladung, die in das elektrische Feld eingebracht wird, um die elektrische Feldstärke nach Betrag und Richtung zu bestimmen.}. Damit aber die Grösse der Probeladung ohne Einfluss bleibt, wird der Quotient aus Kraft und Probeladung verwendet.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+
+Die physikalische Grösse, die das elektrische Feld unabhängig von der Ladung $q_{Probe}$ charakterisiert, ist die elektrische Feldstärke $\vec{E}$. Es gilt:
+
+\begin{equation}
+\vec{E} = \frac{\vec{F}_{C}}{q_{Probe}}
+\label{E}
+\end{equation}
+
+\end{minipage}
+}
+\end{center}
+
+
+
+$\vec{E}$ ist also eine vektorielle Grösse. Die elektrische Feldstärke  $\vec{E}$ im Punkt $P$ ist ein Vektor mit der Richtung der Kraft auf eine positive Probeladung ($q_{Probe}$) im Punkt $P$ und dem Betrag $E = \frac{F}{q_{Probe}}$.
+
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+\draw[ball color=white, shading=ball] (0,0) circle (5mm) node[below=0.6cm] {$Q$};
+\draw[fill=black] (4,0)  circle (0.5mm) node[below=0.6cm] {$P$};
+\draw[dashed] (0,0) -- node[below] {$r$} (4,0);
+\draw[->,draw=red] (4,0) -- node[above,style=red] {$\vec{E}$} (5,0);
+\end{tikzpicture}
+\caption{Das elektrische Feld einer positiven Ladung $Q$ im Punkt $P$}
+\label{Eprobe}
+\end{center}
+\end{figure}
+
+Die Einheit der elektrischen Feldstärke $E$ ist nach ihrer Definition gleich Newton durch Coulomb:
+
+\begin{equation}
+\left[ E \right] = \frac{\left[ F \right]}{\left[ q \right]} = \frac{N}{C}
+\label{DE}
+\end{equation}
+
+Kombinieren wir die Gleichung \ref{FC} mit Gleichung \ref{E}, so erhalten wir die Elektrische Feldstärke für eine punktförmige Ladung $Q$:
+
+\begin{equation}
+E = k \cdot \frac{ Q}{r^{2}} = \frac{1}{4 \pi \epsilon} \frac{Q}{r^2}
+\label{E2}
+\end{equation}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Stromleitung in Wohnhäusern 				& \SI{E-2}{\newton \per \coulomb} \\
+Radiowellen  								& \SI{E-1}{\newton \per \coulomb} \\
+Atmosphäre  								& \SI{E2}{\newton \per \coulomb} \\
+Sonnenlicht  								& \SI{E3}{\newton \per \coulomb} \\
+Unter einer Gewitterwolke  					& \SI{E4}{\newton \per \coulomb} \\
+In einer Röntgenröhre  						& \SI{E6}{\newton \per \coulomb} \\
+Laser 										& bis \SI{E12}{\newton \per \coulomb} \\
+Am Ort des Elektrons im Wasserstoffatom  	& \SI{6E11}{\newton \per \coulomb} \\
+Auf der Oberfläche eines Urankerns  		& \SI{2E21}{\newton \per \coulomb} \\
+\hline
+\end{tabular}
+\caption{Typische Stärken elektrischer Felder}
+\end{center}
+\end{table}
+
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Welchen Betrag besitzt die elektrische Feldstärke im Abstand von \SI{1}{cm} von einem Elektron?
+\item Welche Richtung besitzt der Feldstärkenvektor in diesem Beispiel?
+\item Leiten Sie Gleichung \ref{E2} aus den Gleichungen \ref{FC} und \ref{E} her!
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Elektrisches Feld im Plattenkondensator}
+Ein Plattenkondensator besteht aus zwei einander gegenüberliegenden Metallplatten, die elektrisch aufgeladen werden können. Ein Versuch zeigt uns dass die elektrische Feldstärke im Innenraum eines grossen Plattenkondensators überall gleich gross ist. An den Randbereichen gibt es allerdings Abweichungen davon. Im Innern eines Plattenkondensators liegt ein \textbf{homogenes elektrisches Feld} vor. Die Feldlinien verlaufen parallel zueinander und stehen senkrecht auf die Kondensatorplatten (siehe Abbildung \ref{Plattenkondensator}).
+
+\begin{figure}[h]
+\begin{center}
+\input{plattenkondensator.tex}
+\caption{Das elektrische Feld im Innern eines Plattenkondensators.}
+\label{Plattenkondensator}
+\end{center}
+\end{figure}
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Welche Ladung tragen die Platten in Abbildung \ref{Plattenkondensator}? Zeichnen Sie die Ladungen in der Abbildung ein!
+\item Was bedeutet ``homogenes Feld''?
+\item Berechnen Sie die elektrische Feldstärke im Innern eines Plattenkondensators mit den Flächenladungsdichten $\sigma_{1} = \SI{4}{\micro C}$ und $\sigma_{2} = \SI{-4}{\micro C}$!
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+\chapter{Elektrische Spannung und Energie}
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!10}{gray!10}{
+\begin{minipage}[t][6cm]{\textwidth}
+\paragraph{Versuch}
+Ein Plattenkondensator wird aufgeladen. Eine Entladung erfolgt über eine Glimmlampe. Protokollieren Sie:
+\end{minipage}
+}
+\end{center}
+In beiden Teilexperimenten ist der Betrag der transportierten Ladung der gleiche, die jeweils umgewandelten Energien sind jedoch unterschiedlich gross. Die \textbf{elektrische Spannung} beschreibt diesen Unterschied. 
+
+\section{Definition der Spannung}
+
+Zur Definition der Spannung lässt sich die folgende Situation betrachten: Bringt man eine kleine Probeladung $q$ in ein homogenes elektrisches Feld (Abbildung \ref{homogenesfeld}), so wirkt auf diese die konstante Kraft $F=q E$. Dieser Körper wird beschleunigt und erhält auf der Strecke $s$ die Energie $W = F s$ (zur Unterscheidung von der Feldstärke wird hier für die Energie das Formelzeichen $W$ verwendet).
+
+\begin{figure}[h]
+\begin{center}
+\input{homogenesfeld.tex}
+\caption{Eine Probeladung wird im homogenen elektrischen Feld gleichmässig beschleunigt. Dabei nimmt ihre kinetische Energie zu.}
+\label{homogenesfeld}
+\end{center}
+\end{figure}
+
+Während der Beschleunigung von der einen bis zur anderen Platte erhält die Probeladung also die Energie $W = q E d$. Der gleiche Energiebetrag ist aufzubringen, um die Ladung entgegen den Feldlinien zur positiv geladenen Platte zu bewegen. Die Energie, die umgewandelt wird, wenn sich ein elektrisch geladener Körper von einer Platte des Kondensators zur anderen bewegt, ist proportional zu seiner Ladung: $W \sim q$. Die Proportionalitätskonstante, die die beiden Grössen miteinander verknüpft , heisst elektrische Spannung $U$.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Die elektrische Spannung $U$ zwischen zwei Punkten $A$ und $B$ eines Felds gibt an, wie viel Energie pro Ladung umgewandelt wird, wenn ein geladener Körper von $A$ nach $B$ verschoben wird. Es gilt: 
+\begin{equation}
+U = \frac{W}{q}
+\label{U}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+
+Die Einheit der Spannung ist Volt (\si{\volt}):
+\begin{equation}
+\left[ U \right] = \frac{\left[ W \right]}{\left[ q \right]} = \frac{\si{\joule}}{\si{\coulomb}} = \si{\volt}
+\label{einheitU}
+\end{equation}
+Die Situation in Abbildung \ref{homogenesfeld} lässt sich mit einem angehobenen Körper in einem homogenen Gravitationsfeld\footnote{zum Beispiel das Gravitationsfeld nahe der Erdoberfläche} vergleichen. Fällt der Körper entlang der Feldlinien, wird potentielle Energie in kinetische Energie umgeandelt. Um den Körper entgegen den Feldlinien anzuheben, muss von aussen Energie zugeführt werden.
+
+\section{Feldstärke im Plattenkondensator}
+Für die Spannung in einem homogenen elektrischen Feld gilt:
+\begin{equation}
+U = \frac{W}{q} = \frac{F \cdot d}{q} = \frac{E \cdot q \cdot d}{q} = E \cdot d
+\label{UinE}
+\end{equation}
+Die Grösse $d$ steht dabei für den Abstand der beiden Kondensatorplatten.
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Für die elektrische Feldstärke im homogenen elektrischen Feld eines Plattenkondensators gilt:
+\begin{equation}
+E = \frac{U}{d}
+\label{DefEplattenkondensator}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+
+Kombinieren wir nun die Gleichung für das elektrische Feld (Gleichung \ref{E} auf Seite \pageref{E}) mit der Coulombkraft auf eine Kugel (Probeladung $q_{Probe}$) zwischen zwei geladenen Platten, so erhalten wir einen weiteren Ausdruck für die elektrische Feldstärke im Innern eines Plattenkondensators:
+
+\begin{equation}
+E = \frac{F_{C}}{q_{Probe}} = \frac{1}{\epsilon} \frac{\sigma q_{Probe}}{q_{Probe}} = \frac{1}{\epsilon} \cdot \sigma
+\label{Eplattenkondensator2}
+\end{equation}
+
+In einem homogenen Feld eines Kondensators ist also die Feldstärke der Flächenladungsdichte $\sigma$ auf den Kondensatorplatten proportional: $E \sim \sigma$. Für die Flächenladungsdichte $\sigma$ gilt:
+
+\begin{equation}
+\sigma = \frac{Q}{A}
+\label{sigmadef}
+\end{equation}
+Wobei $Q$ die Ladung auf einer Platte und $A$ die Fläche dieser Platte bezeichnen.
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Leiten Sie die Gleichung \ref{UinE} her. Sie benötigen dazu die Gleichung \ref{E} und eine Gleichung aus der Mechanik.
+\item Überprüfen Sie die Gleichung \ref{Eplattenkondensator2}. Dazu müssen Sie zuerst die Coulombkraft $F_{C}$ für eine Kugel zwischen zwei geladenen Platten aufstellen!
+\item Berechnen Sie die Feldstärke in einem Plattenkondensator mit einem Plattenabstand von \SI{20}{cm}, wenn eine Spannung von \SI{400}{\volt} anliegt!
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Feldstärke im Radialfeld}
+
+Betrachten wir das elektrische Feld einer geladenen Kugel:\\
+Eine Kugeloberfläche mit dem Radius $r$, auf der sich die elektrische Ladung $Q$ befindet, hat die \textbf{Flächenladungsdichte}
+\begin{equation}
+\sigma = \frac{Q}{A} = \frac{Q}{4 \pi r^{2}}
+\label{sigmakugel}
+\end{equation}
+
+Die Feldlinien einer positiv geladenen Kugel weisen radial nach aussen. Verdoppelt man nun den Radius $r$ der Kugel, so nimmt die Flächenladungsdichte auf einen Viertel des ursprünglichen Wertes ab (vgl. Abbildung \ref{kugeln}). Die Feldstärke (im Bild die Feldliniendichte) sinkt ebenfalls auf einen Viertel. In einem Punkt $P$ ausserhalb der Kugel ändert sich die Feldstärke durch die Vergrösserung der Kugel nicht.
+
+\begin{figure}[h]
+\begin{center}
+\input{kugeln.tex}
+\caption{Feldliniendichte (elektrische Feldstärke) und Flächenladungsdichte auf Kugeln mit gleicher Ladung.}
+\label{kugeln}
+\end{center}
+\end{figure}
+
+Das elektrische Feld im Aussenraum einer geladenen Hohlkugel entspricht also dem Feld eines punktförmigen Körpers gleicher Ladung, der sich im Zentrum befindet. Dies ist der Grund dafür, dass das Coulomb'sche Gesetz (vgl. Gleichung \ref{FC}) sowohl für Punktladungen als auch für geladene Kugeln mit beliebigem Radius gilt. Das \textbf{Radialfeld} in der Umgebung einer Punktladung bzw. einer leitenden Kugeloberfläche wird auch als Coulomb-Feld bezeichnet.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Die Feldstärke im Radialfeld einer Ladung $Q$ beträgt:
+\begin{equation}
+E = \frac{1}{4 \pi \epsilon} \frac{Q}{r^{2}}
+\label{Eradialfeld}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Durch was unterscheidet sich ein Radialfeld von einem homogenen elektrischen Feld?
+\item Aus welchem Grund gilt das Coulomb-Gesetz (Gleichung \ref{FC}) sowohl für Punktladungen als auch für geladene Hohlkugeln oder Kugeln?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Elektrisches Potenzial}
+
+Wie für jedes physikalische Feld, so lässt sich auch für das elektrische Feld ein \textbf{Potenzial} definieren. Jeder Punkt $P_{A}$ des elektrischen Feldes ist durch die \textbf{Energie} $W$, die man benötigt um eine Probeladung von einem festgesetzten Bezugspunkt $P_{0}$ nach $P_{A}$ zu bringen, gekennzeichnet. Teilt man diese Energie durch die Probeladung $q_{Probe}$, so ist die Kennzeichnung des Punktes $P_{A}$ von der Ladung unabhängig:
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Das elektrische Potenzial $\varphi$ gibt an, wie viel Energie pro Ladung benötigt wird, um einen geladenen Probekörper von einem Bezugspunkt $P_{0}$ nach $P_{A}$ zu bringen. Es gilt:
+\begin{equation}
+\varphi = \frac{W}{q_{Probe}}
+\label{Potenzial}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+
+Die Einheit des Potenzial ist das Volt (\si{\volt}), $\SI{1}{\volt} = \SI{1}{\coulomb \per \joule}$. Bewegt sich ein Körper im Feld auf \textbf{Äquipotenzialflächen}, so wird dadurch keine Energie umgewandelt. Die Feldlinien stehen senkrecht auf den Äquipotenzialflächen. 
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+
+%\clip (-5.05,-3.5) rectangle (12.9,4);
+%Radialfeld
+\draw[draw=blue] (0,0) circle (1cm);
+\draw[draw=blue] (0,0) circle (2cm);
+\foreach \x in {1,...,24} {
+\draw[rotate around={\x*15:(0,0)},->,>=latex,fill=red!80,draw=red!80] (0,0) -- (3,0);
+}
+\draw[rotate around={-37.5:(0,0)},very thick,->,>=latex,fill=red,draw=red] (0,1.7) -- (0,3.5) node[right=4mm,above] {$\vec{F} = q_{Probe} \cdot \vec{E}$};
+\draw[rotate around={-37.5:(0,0)},fill=white] (0,1.7) node {$+$} circle (2mm) node [below=1mm] {$q_{Probe}$};
+\draw[rotate around={-37.5:(0,0)}] (0.03,2.02) -- (0.03,2.22);
+\draw[rotate around={-37.5:(0,0)}] (0.03,2.02) -- (0.23,2.02);
+\draw[rotate around={-37.5:(0,0)}] (0.18,2.02) arc (0:90:0.15cm);
+\draw[rotate around={-37.5:(0,0)},fill=black] (0.093,2.083) circle (0.1mm);
+\draw[rotate around={37:(0,0)},very thin] (0,1) -- (0,3.2) -- (-0.6,3.65) node[left,text=blue] {$\varphi_{B} = \text{konst.}$};
+\draw[rotate around={22:(0,0)},very thin] (0,2) -- (0,3.5) -- (-0.6,3.74) node[left,text=blue] {$\varphi_{A} = \text{konst.}$};
+
+%homogenes Feld
+\draw[draw=blue] (4.5,-1.5) -- (10.5,-1.5) node [right,text=blue] {$\varphi_{C} = \text{konst.}$};
+\draw[draw=blue] (4.5,0) -- (10.5,0) node [right,text=blue] {$\varphi_{B} = \text{konst.}$};
+\draw[draw=blue] (4.5,1.5) -- (10.5,1.5) node [right,text=blue] {$\varphi_{A} = \text{konst.}$};
+\foreach \x in {1,...,11}{
+\draw[->,>=latex,fill=red!80,draw=red!80] (4.5+\x*0.5,-1.8) -- (4.5+\x*0.5,2.2);
+}
+\draw[very thick,->,>=latex,fill=red,draw=red] (6.75,-1) -- (6.75,1) node[right] {$\vec{F} = q_{Probe} \cdot \vec{E}$};
+\draw[fill=white] (6.75,-1) node {$+$} circle (2mm) node [right=1mm] {$q_{Probe}$};
+\draw (6.78,0.015) -- (6.78,0.215);
+\draw (6.78,0.015) -- (6.98,0.015);
+\draw (6.93,0.02) arc (0:90:0.15cm);
+\draw[fill=black] (6.84,0.093) circle (0.1mm);
+\end{tikzpicture}
+\caption{Äquipotentialflächen und Feldlinien eines Radialfelds und eines homogenen Felds.}
+\label{Aequipotential}
+\end{center}
+\end{figure}
+
+Abbildung \ref{Aequipotential} zeigt Äquipotenzialflächen für ein radiales und ein homogenes elektrisches Feld. Angenommen eine Probeladung $q_{Probe}$ bewegt sich in einem homogenen Feld der Feldstärke $E$ von einer Äquipotenzialfläche  auf eine andere. Dann ändert sich seine potenzielle Energie um den Betrag $W = q_{Probe} E \Delta r$. Dabei ist $\Delta r$ der Abstand der beiden Äquipotenzialflächen.\\
+In einem Radialfeld (hier ist die Feldstärke nicht konstant!) entspricht die Energieänderung der Fläche unter dem Graphen $F_{C}(r)$ in Abbildung \ref{Energieumwandlung}. Mit dem Coulomb'schen Gesetz ergibt sich in einem Feld, das durch eine punktförmige Ladung $Q$ erzeugt wird, für den Betrag der Energie:
+
+\begin{equation}
+\left| W \right| = \frac{Q \cdot q_{Probe}}{4 \pi \epsilon} ( \frac{1}{r_{2}} - \frac{1}{r_{1}})
+\label{energieradialfeld}
+\end{equation}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}[domain=0:6]
+\begin{scope}
+\clip (0.1,0) rectangle (12,4);
+\draw[draw=red] plot[id=pot] function{1/(x**2)};
+\draw[dotted] (0.9,0)  rectangle (2.3,15);
+\clip (0.9,0) rectangle (2.3,15);
+\draw[fill=red!50,draw=red] plot[id=pot] function{1/(x**2)};
+\end{scope}
+\node [right=1.5cm,above] {$W$};
+\node [right=0.9cm,below] {$r_{1}$};
+\node [right=2.3cm,below] {$r_{2}$};
+\node [right=1.4cm,above=3cm] {$\sim \frac{1}{r^{2}}$};
+\draw[->] (0,0) -- (10.05,0) node[right] {$r$};
+\draw[->] (0,0) -- (0,4.05) node[above] {$F_{C}$};
+\end{tikzpicture}
+\caption{Die Energieumwandlung entspricht der Fläche unter dem Graphen im Weg-Kraft-Diagramm.}
+\label{Energieumwandlung}
+\end{center}
+\end{figure}
+
+\subsubsection{Nullniveau des elektrischen Potenzials}
+Für energetische Betrachtungen ist es sinnvoll ein Nullniveau festzulegen. Alle potentiellen Energien werden bezüglich dieses Nullniveaus angegeben. Für ein radiales elektrisches Feld wird das Nullniveau der Energie bzw. des Potenzials so gewählt, dass eine Probeladung im unendlich grossen Abstand $r_{1}$ vom felderzeugenden Körper das Potenzial null besitzt. Der Energienullpunkt liegt also im Unendlichen. 
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Für das elektrische Potenzial (Coulomb-Potenzial) eines Punkts im Abstand $r$ von der Punktladung $Q$ gilt dann:
+
+\begin{equation}
+\left| \varphi  \right|= \frac{1}{4 \pi \epsilon} \cdot \frac{Q}{r}
+\label{potenzialradial}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+
+\subsubsection{Vorzeichen elektrischen Potenzials}
+Die Gleichungen \ref{energieradialfeld} und \ref{potenzialradial} beschreiben nur den Betrag der Energie bzw. des Potenzials. Es ist aber zu unterscheiden, ob zwischen der Ladung $Q$ und der Probeladung $q_{Probe}$ in einem Feld eine Anziehung oder eine Abstossung vorliegt. Bei einer \textbf{Anziehung} (ungleichnamige Ladung) gilt, dass alle Potenzialwerte in einem Feld \textbf{negativ} sind. Bei einer Vergrösserung des Abstands muss Energie aufgewendet werden. Bei einer \textbf{Abstossung} (gleichnamige Ladung) gilt, dass alle Potenzialwerte \textbf{positiv} sind. Es muss Energie aufgewendet werden, um eine Probeladung $q_{Probe}$ der Ladung $Q$ zu nähern.
+
+\subsubsection{Spannung als Potenzialdifferenz}
+
+Nach der Definition durch Gleichung \ref{U} ist die Spannung $U$ zwischen zwei Punkten $A$ und $B$ die Differenz der Potenziale an diesen Punkten. Wenn zwischen zwei Kondensatorplatten ein elektrisches Feld  herrscht, ist dies gleichbedeutend damit, dass die Platte mit der Ladung $+Q$ auf einem höheren Potenzial $\varphi$ liegt als die Platte mit der Ladung $-Q$. Zwischen den Platten liegt dann die Spannung $U=\Delta \varphi$ an.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Wie sehen die Äquipotenzialflächen im Innern eines geladenen Plattenkondensators aus?
+\item Welche Gestalt hat eine Äquipotentialfläche um ein isoliertes Proton?
+\item Was bedeutet ``Am Plattenkondensator liegt eine Spannung von \SI{400}{\volt} an''?
+\item Welche Energie muss aufgewendet werden, um den Abstand zwischen Proton und Elektron (\SI{E-10}{m}) zu verdoppeln?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\chapter{Kondensatoren}
+Wie wir bereits im Versuch gesehen haben, kann ein Kondensator\footnote{von lateinisch \textit{condensare}, deutsch ``verdichten''} elektrische Ladung und damit auch Energie speichern. Diese Fähigkeit macht Kondensatoren zu wichtigen Bauteilen in der Elektrotechnik und Elektronik und wir finden Kondensatoren deshalb in praktisch allen Elektrogeräten.
+
+\section{Definition der Kapazität}
+Die Flächenladungsdichte $\sigma$ auf den Kondensatorplatten ist nach Gleichung \ref{Eplattenkondensator2} ein Mass für die Feldstärke $E$ innerhalb des Kondensators: $\sigma \sim E = \nicefrac{U}{d}$. Daraus ergibt sich: Die Ladung eines Kondensators ist proportional zur Spannung zwischen den Kondensatorplatten: $Q = C U$. Die Proportionalitätskonstante $C$ heisst Kapazität.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Die Kapazität $C$ eines Kondensators gibt an, wie viel Ladung bei einer bestimmten Spannung $U$ auf den Platten gespeichert ist. Es gilt:
+\begin{equation}
+C = \frac{Q}{U}
+\label{defkapazitaet}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+Die Einheit der Kapazität ist das Farad\footnote{nach Michael Faraday (22. September 1791 - 25. August 1867)} (\si{\farad}). Es gilt: $\SI{1}{\farad} = \SI{1}{\coulomb\per\volt}$. Ein Kondensator hat also die Kapazität von einem Farad, wenn er beim Aufladen mit einer Spannung von einem Volt genau ein Coulomb Ladung speichert.
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item $C = \SI{1}{\farad}$ ist eine sehr grosse Kapazität. Kondensatoren in technischen Geräten haben oft um mehrere Grössenordnungen kleinere Kapazitäten, z.B.: \SI{1}{\micro \farad}, \SI{1}{\nano \farad}, \SI{1}{\pico \farad}. Weshalb?
+\item Was genau beschreibt die Grösse $C$?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Die Leidener Flasche}
+\begin{wrapfigure}{r}[0cm]{4cm}
+\includegraphics[width=3cm]{leidener.png}
+	\caption{Leidener Flasche}
+	\label{fig:leidener}
+\end{wrapfigure}
+In den Jahren 1745/46 versuchten zwei Forscher\footnote{1745 Ewald Georg von Kleist (Domdekan aus Cammin) und 1746 der Physiker Pieter van Musschenbroek aus Leiden} unabhängig voneinander, die beim Reiben erzeugte elektrische Ladung in Flaschen zu leiten. Man war zu dem Zeitpunkt überzeugt davon, dass es sich bei der elektrischen Ladung um irgendeine geheimnisvolle unsichtbare Flüssigkeit handeln müsse, die durch das Reiben irgendwie in Verwirbelung gebracht wurde. Anfangs klappte das nicht, die Elektrizität liess sich nicht so einfach in Flaschen abfüllen. Als man versuchte, eine Flüssigkeit in das Glas zu füllen damit die unsichtbare Ladung sich in dieser ausbreiten konnte, nahm das Experiment einen ganz anderen Verlauf: Kleist hatte bei Experimenten einen Nagel in eine alkoholgefüllte Flasche gesteckt und an eine Elektrisiermaschine angeschlossen. Beim späteren Herausziehen des Nagels erhielt er einen kräftigen elektrischen Schlag. Musschenbroek machte eine ähnliche Erfahrung.
+Weitere Untersuchungen führten dann sehr schnell zur Entwicklung der ``Leidener Flasche'', dem ersten \textbf{Kondensator}. Es zeigte sich später, dass die Flüssigkeit überhaupt nicht notwendig ist und dass noch nicht einmal eine Flasche gebraucht wird. Es reicht, wenn an beiden Seiten einer flachen Scheibe aus nicht leitendem Material je eine Schicht aus leitendem Material angebracht wird (vgl. Abbildung \ref{fig:kondensator}).
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Vergleichen Sie die Leidener Flasche mit dem Plattenkondensator aus dem Unterricht. Was sind die Unterschiede?
+\item Was passiert auf der Aussenseite der Leidener Flasche, wenn die Innenseite positiv geladen wird?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+
+\section{Isolatoren im elektrischen Feld}
+Durch ein elektrisches Feld kommt es in einem Leiter zu einer Ladungstrennung (Influenz), in einem Isolator\footnote{Nichtleiter, zum Beispiel Keramik, Glas, Kunststoff. Ein polarisierbarer Nichtleiter wird auch Dielektrikum genannt.} dagegen zu einer Polarisation. Dabei werden entweder vorhandene Dipolmoleküle\footnote{zum Beispiel Wassermoleküle} ausgerichtet, oder es finden Ladungsverschiebungen auf grösseren Molekülen statt. Während auf einer Leiteroberfläche durch ein äusseres Feld so viel Ladung verschoben wird, dass das Innere des Leiters feldfrei bleibt, schwächt die Polarisation das Feld im Innern des Nichtleiters nur etwas ab. Der Nichtleiter ist im Innern also nicht feldfrei. Bei einem Isolator in einem äusseren Feld ist also die Feldstärke im Innern des Isolators stets kleiner als die Feldstärke des äusseren Feldes. 
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{black}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Definition}
+Die Abnahme des Felds in einem Isolator wird durch die stoffspezifische Grösse $\epsilon_{r}$ beschrieben. Diese Grösse heisst \textbf{Dielektrizitätszahl} oder auch \textbf{relative Permittivität}:
+\begin{equation}
+E_{in} = \frac{1}{\epsilon_{r}} \cdot E_{aeuss}
+\label{defepsilonr}
+\end{equation}
+\end{minipage}
+}
+\end{center}
+Die relative Permittivität $\epsilon_{r}$ eines Materials hängt davon ab, wie leicht es sich polarisieren lässt. In Tabelle \ref{tab:epsilon} sind einige Werte für $\epsilon_{r}$ aufgelistet.
+
+
+\begin{figure}[h]
+\begin{center}
+\input{kondensatorschema.tex}
+\caption{Kondensator mit Dielektrikum}
+\label{fig:kondensator}
+\end{center}
+\end{figure}
+
+Wenn nun ein Isolator zwischen den Platten eines Kondensators angebracht wird, so wird sich das elektrische Feld zwischen den Platten verkleinern. Dies führt zu einer Abnahme der Spannung zwischen den beiden Platten (vgl. Gleichung \ref{DefEplattenkondensator} auf Seite \pageref{DefEplattenkondensator}). Nach der Definition in Gleichung \ref{defkapazitaet} muss demzufolge die Kapazität des Kondensators durch den Einfluss des Isolators zunehmen. Die Gleichung \ref{Eplattenkondensator2} gilt für den Fall, dass das Feld im Kondensator nicht durch einen Isolator beeinfluss wird: $\sigma = \epsilon E_{aeuss}$. Wird nun ein Isolator in das Kondensatorfeld gebracht, bleibt die Flächenladungsdichte $\sigma$ konstant, aber die Feldstärke ändert sich: $\sigma = \epsilon \cdot \epsilon_{r} \cdot E_{in}$. Damit lässt sich die Kapazität eines Plattenkondensators für den Fall berechnen, dass der Raum zwischen seinen Platten vollständig von einem isolierenden Material ausgefüllt wird:
+\begin{equation}
+C = \frac{Q}{U} = \sigma \cdot \frac{A}{U}
+\label{kapazitaetisolator}
+\end{equation}
+Mit $U = E d$ und $E = \nicefrac{\sigma}{(\epsilon \cdot \epsilon_{r}}$ ergibt sich:
+\begin{equation}
+C = \epsilon \cdot \epsilon_{r} \cdot \frac{A}{d}
+\label{kapazitaetisolator2}
+\end{equation}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+
+\draw[fill=gray!30] (0,0) rectangle (1,5.1);
+\draw[fill=gray!30] (9,0) rectangle (10,5.1);
+\draw[fill=gray!50,draw=gray!50] (2.3,0) rectangle (7.7,5.1);
+\foreach \y in {1,...,10}{
+\draw[fill=white] (0.7,0.5*\y-0.2) node {$-$} circle (2mm);
+\draw[fill=white] (9.3,0.5*\y-0.2) node {$+$} circle (2mm);
+\draw[->,>=latex,draw=red,fill=red] (1.1,0.5*\y-0.2) -- (1.6,0.5*\y-0.2);
+\draw[<-,>=latex,draw=red,fill=red] (8.4,0.5*\y-0.2) -- (8.9,0.5*\y-0.2);
+\draw[<-,>=latex,draw=red,fill=red] (1.7,0.5*\y-0.2) -- (2.2,0.5*\y-0.2);
+\draw[->,>=latex,draw=red,fill=red] (7.8,0.5*\y-0.2) -- (8.3,0.5*\y-0.2);
+\foreach \x in {1,...,4}{
+\draw[fill=gray!20] (1.9+\x*1.25,0.5*\y-0.2) node {$+ \ -$} ellipse (5mm and 2mm);
+}
+}
+\node [right=5cm,below] {Isolator};
+\end{tikzpicture}
+\caption{Zwischen einem Isolator und den Kondensatorplatten kommt es zu einer Anziehung, der Isolator wird polarisiert.}
+\label{Isolator}
+\end{center}
+\end{figure}
+Dass die Kapazität $C$ eines Plattenkondensators durch den Einfluss eines polarisierbaren Isolators zunimmt, verdeutlicht auch Abbildung \ref{Isolator}. Die Ladungen auf den Kondensatorplatten werden von den polarisierten Oberflächen des Isolators angezogen. Um also eine bestimmte Ladung auf die Kondensatorplatten zu bringen, muss die anliegende Spannung nicht so gross sein wie im Falle eines Vakuums zwischen den Platten. 
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Betrachten Sie Abbildung \ref{Isolator}. Weshalb kommt es zwischen dem Isolator und den Kondensatorplatten zu einer Anziehung? (Argumentieren Sie nicht mit Hilfe der Fernwirkungstheorie!)
+\item Wie erklären Sie sich den grossen Unterschied zwischen den relativen Permittivitäten von Wasser und Quarzglas (vgl. Tabelle \ref{tab:epsilon})?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\section{Bauformen von Kondensatoren}
+
+Kondensatoren werden vielfältig in Stromkreisen eingesetzt, um Ladung bzw. Energie zu speichern. Aus Gleichung \ref{kapazitaetisolator2} ergibt sich, wie Kondensatoren gebaut werden müssen, damit sie eine möglichst grosse Kapazität haben, also bei einer bestimmten Spannung möglichst viel elektrische Ladung speichern können. Die Kapazität eines Kondensators ist umso grösser
+\begin{itemize}
+	\item je grösser die Fläche $A$ der Platten ist,
+	\item je kleiner der Abstand $d$ der Platten ist,
+	\item je grösser die relative Permittivität des Materials zwischen den Platten ist.
+\end{itemize}
+
+\begin{center}
+   \setlength{\fboxrule}{2pt}
+   \fcolorbox{gray!30}{gray!10}{
+\begin{minipage}{\textwidth}
+\paragraph{Aufgaben}
+\begin{enumerate}
+\setcounter{enumi}{\value{aufgaben}}
+\item Wie ändert sich die Kapazität $C$ eines Kondensators, wenn der Abstand zwischen den Platten verdoppelt wird?
+\item Zwischen zwei leitenden Metallfolien wird eine ölgetränkte Papierschicht gelegt. Das ganze wird zylinderförmig aufgewickelt. Worin bestehen die Vorteile dieses Papierkondensators?
+\setcounter{aufgaben}{\value{enumi}}
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Stoff 				& $\epsilon_{r}$ \\
+\hline
+Luft  								& 1.00058 \\
+Wasser 								& 80 \\
+Etanol  							& 26 \\
+Quarzglas 						& 3.8 \\
+Porzellan  						& 6.5 \\
+\hline
+\end{tabular}
+\caption{Relative Permittivität einiger Stoffe. Für Luft wird in der Regel der Wert $\epsilon_{r} = 1$ verwendet.}
+\label{tab:epsilon}
+\end{center}
+\end{table}
+
+\end{document}
